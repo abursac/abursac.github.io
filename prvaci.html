@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/jpg" href="Slike/board1.jpg">
+            <title>ШАХ - Прваци</title>
+            <link rel="stylesheet" href="css/style.css" type="text/css">
+            <script src="jquery-3.4.1.min.js"></script>
+            
+    </head>
+    <body>
+        <div id="header">
+            <div id="title">
+                ШАХ
+            </div>
+            <div id="date">
+                    <p> 
+                        <span id="datetime">
+                            <script>
+                            var dt = new Date();
+                            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ ((dt.getHours())) +":"+ ((dt.getMinutes()));
+                            </script>
+                        </span>
+                    </p>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menu-item" onclick="window.location.href = 'index.html'">
+                Почетна
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'pravila.html'">
+                Правила
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'figure.html'">
+                Фигуре
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'prvaci.html'">
+                Светски прваци
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'kategorije.html'">
+                Категорије
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'registracija.html'">
+                Регистрација
+            </div>
+        </div>
+        <div id="main">
+                <div id="login">
+                    <form>
+                        <h3>Пријава</h3>
+                        <input type="text" placeholder="Корисничко име" id="username">
+                        <input type="password" placeholder="Лозинка" id="password">
+                        <button onclick="login()" id="button">Потврди</button>
+                    </form>
+                </div>
+
+                <div id="content">
+                    <h1>Прваци</h1>
+                    <div id="champions">
+                        <button onclick="back()"><b><-</b></button>
+
+                        <a href="https://en.wikipedia.org/wiki/Wilhelm_Steinitz" target="_blank"><div class="field">
+                            <img src="Slike/1.jpg">
+                            <span><b>Wilhelm Steinitz</b><br> 1886-1894</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Emanuel_Lasker"  target="_blank"><div class="field">
+                            <img src="Slike/2.jpg">
+                            <span><b>Emanuel Lasker</b><br> 1894-1921</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca"  target="_blank"><div class="field">
+                            <img src="Slike/3.jpg">
+                            <span><b>José Raúl Capablanca</b><br> 1921-1927</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Alexander_Alekhine"  target="_blank"><div class="field">
+                            <img src="Slike/4.jpg">
+                            <span><b>Alexander Alekhine</b><br> 1927-1935, 1937-1946</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Max_Euwe" target="_blank"><div class="field">
+                            <img src="Slike/5.jpg">
+                            <span><b>Max Euwe</b><br> 1935-1937</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Mikhail_Botvinnik" target="_blank"><div class="field">
+                            <img src="Slike/6.jpg">
+                            <span><b>Mikhail Botvinnik</b><br> 1948-1957, 1958-1960, 1961-1963</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Vasily_Smyslov" target="_blank"><div class="field">
+                            <img src="Slike/7.jpg">
+                            <span><b>Vasily Smyslov</b><br> 1957-1958</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Mikhail_Tal" target="_blank"><div class="field">
+                            <img src="Slike/8.jpg">
+                            <span><b>Mikhail Tal</b><br> 1960-1961</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Tigran_Petrosian" target="_blank"><div class="field">
+                            <img src="Slike/9.jpg">
+                            <span><b>Tigran Petrosian</b><br> 1963-1969</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Boris_Spassky" target="_blank"><div class="field">
+                            <img src="Slike/10.jpg">
+                            <span><b>Boris Spassky</b><br> 1969-1972</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Bobby_Fischer" target="_blank"><div class="field">
+                            <img src="Slike/11.jpg">
+                            <span><b>Bobby Fischer</b><br> 1972-1975</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Anatoly_Karpov" target="_blank"><div class="field">
+                            <img src="Slike/12.jpg">
+                            <span><b>Anatoly Karpov</b><br> 1975-1985, 1993-1999</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Garry_Kasparov" target="_blank"><div class="field">
+                            <img src="Slike/13.jpg">
+                            <span><b>Garry Kasparov</b><br> 1985-1993</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Vladimir_Kramnik" target="_blank"><div class="field">
+                            <img src="Slike/14.jpg">
+                            <span><b>Vladimir Kramnik</b><br> 2000-2007</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Viswanathan_Anand" target="_blank"><div class="field">
+                            <img src="Slike/15.jpg">
+                            <span><b>Viswanathan Anand</b><br> 2007-2013</span>
+                            
+                        </div></a>
+                        <a href="https://en.wikipedia.org/wiki/Magnus_Carlsen" target="_blank"><div class="field">
+                            <img src="Slike/16.jpg">
+                            <span><b>Magnus Carlsen</b><br> 2013-данас</span>
+                            
+                        </div></a>
+
+                        <button onclick="forward()"><b>-></b></button>
+                    </div>
+                </div>
+
+        </div>
+        <div id="footer">
+            <div id="tekst">
+                    <i>Шах клуб "Глига"
+                    <br>
+                    Београд, Митровачка 1
+                    <br>
+                    Тел. +381655102929
+                    <br>
+                    Е-мејл: skgliga@gmail.com</i>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var first = 0;
+            var last = 4;
+            var minIndex = 0;
+            var maxIndex = 16;
+
+            
+            function present()
+            {
+                $('.field').hide();
+                $('.field').slice(first, last).show();
+            }
+           
+            present();
+            function forward()
+            {
+                if(last != maxIndex)
+                {
+                    first++;
+                    last++;
+                }
+                
+                
+                present();
+            }
+
+            function back()
+            {
+                if(first != minIndex)
+                {
+                    first--;
+                    last--;
+                }
+                
+                present();
+            }
+            
+        </script>
+        <script src="skripte/login.js"></script>
+        <script>checkLogin();</script>
+    </body>
+</html>

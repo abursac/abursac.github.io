@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/jpg" href="Slike/board1.jpg">
+            <title>ШАХ - Почетна</title>
+            <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    </head>
+    <body>
+        <div id="header">
+            <div id="title">
+                ШАХ
+            </div>
+            <div id="date">
+                    <p> 
+                        <span id="datetime">
+                            <script>
+                            var dt = new Date();
+                            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ ((dt.getHours())) +":"+ ((dt.getMinutes()));
+                            </script>
+                        </span>
+                    </p>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menu-item" onclick="window.location.href = 'index.html'">
+                Почетна
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'pravila.html'">
+                Правила
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'figure.html'">
+                Фигуре
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'prvaci.html'">
+                Светски прваци
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'kategorije.html'">
+                Категорије
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'registracija.html'">
+                Регистрација
+            </div>
+        </div>
+        
+
+        <div id="pocetna">
+                <centre><h1>ДОБРО ДОШЛИ НА СТРАНИЦУ ПОСВЕЋЕНУ ШАХУ</h1></centre>
+                
+
+                <div id="pocetna-liste">
+                        <div id="liste_">
+                                <h2>СВЕТСКА РАНГ ЛИСТА</h2>
+                                <table class="live">
+                                        <tr>
+                                        <td>Ранг</td>
+                                        <td>Држава</td>
+                                        <td>Играч</td>
+                                        <td>Рејтинг</td>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td class="drzava"><img src="Slike/nor.jpg" class="state"></td>
+                                                <td><b>Magnus Carlsen</b></td>
+                                                <td>2870</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td class="drzava"><img src="Slike/usa.jpg" class="state"></td>
+                                                <td><b>Fabiano Caruana</b></td>
+                                                <td>2822</td>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td class="drzava"><img src="Slike/china.jpg" class="state"></td>
+                                                <td><b>Ding Liren</b></td>
+                                                <td>2801</td>
+                                        </tr>
+                                        <tr>
+                                                <td>4</td>
+                                                <td class="drzava"><img src="Slike/france.jpg" class="state"></td>
+                                                <td><b>Maxime Vachier-Lagrave</b></td>
+                                                <td>2777</td>
+                                        </tr>
+                                        <tr>
+                                                <td>5</td>
+                                                <td class="drzava"><img src="Slike/net.jpg" class="state"></td>
+                                                <td><b>Anish Giri</b></td>
+                                                <td>2776</td>
+                                        </tr>
+                                        <tr>
+                                                <td>6</td>
+                                                <td class="drzava"><img src="Slike/russia.jpg" class="state"></td>
+                                                <td><b>Ian Nepomniachtchi</b></td>
+                                                <td>2773</td>
+                                        </tr>
+                                        <tr>
+                                                <td>7</td>
+                                                <td class="drzava"><img src="Slike/arm.jpg" class="state"></td>
+                                                <td><b>Levon Aronian</b></td>
+                                                <td>2772</td>
+                                        </tr>
+                                        <tr>
+                                                <td>8</td>
+                                                <td class="drzava"><img src="Slike/aze.jpg" class="state"></td>
+                                                <td><b>Shakhriyar Mamedyarov</b></td>
+                                                <td>2772</td>
+                                        </tr>
+                                        <tr>
+                                                <td>9</td>
+                                                <td class="drzava"><img src="Slike/aze.jpg" class="state"></td>
+                                                <td><b>Teimour Radjabov</b></td>
+                                                <td>2767</td>
+                                        </tr>
+                                        <tr>
+                                                <td>10</td>
+                                                <td class="drzava"><img src="Slike/russia.jpg" class="state"></td>
+                                                <td><b>Alexander Grischuk</b></td>
+                                                <td>2764</td>
+                                        </tr>
+                                </table>
+                        </div>
+
+                        <div id="liste_1">
+                                <h2>СВЕТСКА РАНГ ЛИСТА ЖЕНА</h2>
+                                <table class="live">
+                                <tr>
+                                        <td>Ранг</td>
+                                        <td>Држава</td>
+                                        <td>Играч</td>
+                                        <td>Рејтинг</td>
+                                </tr>
+                                <tr>
+                                        <td>1</td>
+                                        <td class="drzava"><img src="Slike/china.jpg" class="state"></td>
+                                        <td><b>Hou Yifan</b></td>
+                                        <td>2659</td>
+                                </tr>
+                                <tr>
+                                        <td>2</td>
+                                        <td class="drzava"><img src="Slike/china.jpg" class="state"></td>
+                                        <td><b>Ju Wenjun</b></td>
+                                        <td>2586</td>
+                                </tr>
+                                <tr>
+                                        <td>3</td>
+                                        <td class="drzava"><img src="Slike/india.jpg" class="state"></td>
+                                        <td><b>Humpy Koneru</b></td>
+                                        <td>2577</td>
+                                </tr>
+                                <tr>
+                                        <td>4</td>
+                                        <td class="drzava"><img src="Slike/russia.jpg" class="state"></td>
+                                        <td><b>Aleksandra Goryachkina</b></td>
+                                        <td>2575</td>
+                                </tr>
+                                <tr>
+                                        <td>5</td>
+                                        <td class="drzava"><img src="Slike/ukraine.jpg" class="state"></td>
+                                        <td><b>Mariya Muzychuk</b></td>
+                                        <td>2552</td>
+                                </tr>
+                                <tr>
+                                        <td>6</td>
+                                        <td class="drzava"><img src="Slike/russia.jpg" class="state"></td>
+                                        <td><b>Kateryna Lagno</b></td>
+                                        <td>2549</td>
+                                </tr>
+                                <tr>
+                                        <td>7</td>
+                                        <td class="drzava"><img src="Slike/ukraine.jpg" class="state"></td>
+                                        <td><b>Anna Muzychuk</b></td>
+                                        <td>2543</td>
+                                </tr>
+                                <tr>
+                                        <td>8</td>
+                                        <td class="drzava"><img src="Slike/lit.jpg" class="state"></td>
+                                        <td><b>Viktorija Čmilytė</b></td>
+                                        <td>2538</td>
+                                </tr>
+                                <tr>
+                                        <td>9</td>
+                                        <td class="drzava"><img src="Slike/india.jpg" class="state"></td>
+                                        <td><b>Harika Dronavalli</b></td>
+                                        <td>2518</td>
+                                </tr>
+                                <tr>
+                                        <td>10</td>
+                                        <td class="drzava"><img src="Slike/russia.jpg" class="state"></td>
+                                        <td><b>Valentina Gunina</b></td>
+                                        <td>2509</td>
+                                </tr>
+                                </table>
+                        </div>
+                </div>
+        </div>
+
+
+        <div id="footer">
+                <div id="tekst">
+                        <i>Шах клуб "Глига"
+                        <br>
+                        Београд, Митровачка 1
+                        <br>
+                        Тел. +381655102929
+                        <br>
+                        Е-мејл: skgliga@gmail.com</i>
+                </div>
+        </div>
+    </body>
+</html>

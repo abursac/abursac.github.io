@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/jpg" href="Slike/board1.jpg">
+            <title>ШАХ - Правила</title>
+            <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="title">
+                ШАХ
+            </div>
+            <div id="date">
+                    <p> 
+                        <span id="datetime">
+                            <script>
+                            var dt = new Date();
+                            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ ((dt.getHours())) +":"+ ((dt.getMinutes()));
+                            </script>
+                        </span>
+                    </p>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menu-item" onclick="window.location.href = 'index.html'">
+                Почетна
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'pravila.html'">
+                Правила
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'figure.html'">
+                Фигуре
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'prvaci.html'">
+                Светски прваци
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'kategorije.html'">
+                Категорије
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'registracija.html'">
+                Регистрација
+            </div>
+        </div>
+        <div id="main">
+                <div id="login">
+                    <form>
+                        <h3>Пријава</h3>
+                        <input type="text" placeholder="Корисничко име" id="username">
+                        <input type="password" placeholder="Лозинка" id="password">
+                        <button onclick="login()" id="button">Потврди</button>
+                    </form>
+                </div>
+
+                <div id="content">
+                    <h1>Правила</h1>
+                    <p>Шах се игра на квадратној плочи (табли) која се назива шаховска табла (плоча). Табла је подељена на 8 колона и 8 редова поља, дакле садржи 64 поља која су наизменично црне и беле боје.</p>
+    
+                    <p>Поља могу бити нацртана (штампана) или на посебном столу који се назива шаховски сто и служи првенствено за играње шаха.</p>
+                    
+                    <p>Сваки играч почиње игру са 16 фигура. Фигуре су: краљ, краљица (или дама), 
+                        топ (или кула) — 2 комада, скакач (или коњ) — 2 комада, ловац (или лауфер) (2 комада), пешак (или пион) — 8 комада. 
+                        Један играч игра белим, а други црним фигурама, наизменично померајући своје фигуре, при чему бели има предност првог потеза.</p>
+                    
+                    <p>Циљ игре је довести противника у шах-мат (шах-мат значи мртав краљ) ситуацију.</p>
+                    
+                    <p>Шах-мат је ситуација када је краљ нападнут и не постоји начин да се заштити од напада или да се помери на ненападнуто поље.
+                            У случају шах-мата (краће мат), партија се завршава, а победник је играч који је матирао супарника. 
+                            Осим мата, кад је победник познат, партија може да резултује и ремијем или пат позицијом - тада је резултат нерешен.</p>
+                    
+                    <p>Пат је ситуација када је један од играча на потезу, али не може да помери ни једну своју фигуру.</p>
+                    
+                    <p>Реми је ситуација када ниједан играч не може дати мат другом играчу, углавном услед недостатка фигура 
+                        или када оба играча процене да не могу надиграти свог противника, тада договорно закључују реми, и то се записује ½:½, тј. поен се дели.</p>
+                    
+                    <p>Некада је постојало правило да се у случају пата или ремија рачуна да су оба играча изгубила, 
+                        или се играло све док неко не би победио, међутим пошто је то могло драстично да се одужи, 
+                        да би убрзали одигравање турнира, FIDE (франц. Fédération Internationale des Échecs - Међународна шаховска федерација) је донела данашње правило о подели поена.</p> 
+                </div>
+
+        </div>
+        <div id="footer">
+            <div id="tekst">
+                    <i>Шах клуб "Глига"
+                    <br>
+                    Београд, Митровачка 1
+                    <br>
+                    Тел. +381655102929
+                    <br>
+                    Е-мејл: skgliga@gmail.com</i>
+            </div>
+        </div>
+        <script src="skripte/login.js"></script>
+        <script>checkLogin();</script>
+    </body>
+</html>

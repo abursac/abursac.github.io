@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/jpg" href="Slike/board1.jpg">
+            <title>ШАХ - Категорије</title>
+            <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body  onload="checkLogin()"> 
+        <div id="header">
+            <div id="title">
+                ШАХ
+            </div>
+            <div id="date">
+                    <p> 
+                        <span id="datetime">
+                            <script>
+                            var dt = new Date();
+                            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ ((dt.getHours())) +":"+ ((dt.getMinutes()));
+                            </script>
+                        </span>
+                    </p>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menu-item" onclick="window.location.href = 'index.html'">
+                Почетна
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'pravila.html'">
+                Правила
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'figure.html'">
+                Фигуре
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'prvaci.html'">
+                Светски прваци
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'kategorije.html'">
+                Категорије
+            </div>
+            <div class="menu-item" onclick="window.location.href = 'registracija.html'">
+                Регистрација
+            </div>
+        </div>
+        <div id="main">
+                <div id="login">
+                    <form>
+                        <h3>Пријава</h3>
+                        <input type="text" placeholder="Корисничко име" id="username">
+                        <input type="password" placeholder="Лозинка" id="password">
+                        <button onclick="login()" id="button">Потврди</button>
+                    </form>
+                </div>
+
+                <div id="content">
+                    <h2>Шаховске категорије</h2>
+                    <p>Шахисти су подељени у категорије према освојеном броју поена на Ело-ранг-листи:</p>
+                    <form id="categories">
+                        <table id="tabela">
+                            <tr>
+                                <td>2700+</td>
+                                <td>Шампионски кандидат</td>
+                            </tr>
+                            <tr>
+                                <td>2500-2700</td>
+                                <td>Велемајстор</td>
+                            </tr>
+                            <tr>
+                                <td>2400-2500</td>
+                                <td>Интернационални мајстор</td>
+                            </tr>
+                            <tr>
+                                <td>2300-2400</td>
+                                <td>Мајстор</td>
+                            </tr>
+                            <tr>
+                                <td>2000-2300</td>
+                                <td>Мајсторски кандидат</td>
+                            </tr>
+                            <tr>
+                                <td>1800-2000</td>
+                                <td>Прва категорија</td>
+                            </tr>
+                            <tr>
+                                <td>1600-1800</td>
+                                <td>Друга категорија</td>
+                            </tr>
+                            <tr>
+                                <td>1400-1600</td>
+                                <td>Трећа категорија</td>
+                            </tr>
+                            <tr>
+                                <td>1200-1400</td>
+                                <td>Четврта категорија</td>
+                            </tr>
+                            <tr>
+                                <td>-1200</td>
+                                <td>Почетник</td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+        </div>
+        <div id="footer">
+            <div id="tekst">
+                    <i>Шах клуб "Глига"
+                    <br>
+                    Београд, Митровачка 1
+                    <br>
+                    Тел. +381655102929
+                    <br>
+                    Е-мејл: skgliga@gmail.com</i>
+            </div>
+        </div>
+        <script src="skripte/login.js"></script>
+        <script>checkLogin();</script>
+    </body>
+</html>

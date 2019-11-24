@@ -1,0 +1,225 @@
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 50px auto;
+    grid-row-gap: 5px;
+    background-image: url('../Slike/background.jpg');
+    background-size: cover;
+    margin: 0%;
+}
+
+#header {
+    background-image: url('../Slike/header.jpg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:250px;
+}
+
+#footer {
+    background-color: rgba(122, 55, 28, 0.959);
+}
+
+#menu{
+    background-color: rgba(122, 55, 28, 0.959);
+    display: flex;
+   flex-wrap: wrap;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-column-gap: 2px;
+}
+
+#login{
+    background-color: rgba(236, 74, 10, 0.719);
+    padding: 1px 8px;
+    border-radius: 25px;
+    height: 300px;
+}
+
+#login input{
+    height: 25px;
+    display: block;
+    font-size: 15px;
+    width: 90%;
+}
+
+#login button{
+    font-size: 15px;
+}
+
+#content{
+    background-color: rgba(236, 74, 10, 0.719);
+    padding: 1px 8px;
+    border-radius: 25px;
+}
+
+.menu-item{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    margin-right: 5px;
+    padding: 10px;
+
+}
+
+.menu-item:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+#title{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: brown;
+    display: inline-block;
+    padding: 1px 3px;
+}
+
+#champions{
+    display: flex;
+}
+
+.field{
+    padding: 3px 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px gray;
+    text-align: center;
+    background-color: rgb(235, 201, 137);
+    width: 220px;
+    height: 380px;
+}
+
+.field img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.field span{
+    font-size: 23px;
+}
+
+#categories{
+    height: auto;
+}
+
+#tabela{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+#tabela td{
+    border: 1px solid black;
+}
+
+#tabela td{
+    background-color: wheat;
+}
+
+#champions a{
+    text-decoration: none;
+}
+
+#champions a:visited{
+    color: black;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:visited{
+    color: black;
+}
+
+#slika{
+    width: 500px;
+}
+
+#pocetna{
+    
+}
+
+#pocetna h1{
+    text-align: center;
+}
+
+#pocetna-liste
+{
+    padding-left:100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 2px;
+}
+
+.live{
+    border: 2px solid black;
+    background-color: rgb(248, 248, 98);
+}
+
+.live td{
+    border: 1px solid black;
+}
+
+.drzava{
+    width: 50px;
+    height: 25px;
+}
+
+.state{
+    width: 50px;
+    height: 25px;
+}
+
+#date{
+    font-style: oblique;
+    color: white;
+}
+
+#tekst{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#champions button{
+    height: 100px;
+    width: 40px;
+    margin-top: 125px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(214, 199, 59);
+}
+
+@media only screen and (max-width: 900px)
+{
+    #pocetna-liste
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #liste_
+    {
+        grid-column: 1 / span 2;
+        padding:0;
+    }
+    #header
+    {
+        background-position-y: 0;
+    }
+    body
+    {
+        grid-template-rows: 300px 100px auto;
+    }
+}
